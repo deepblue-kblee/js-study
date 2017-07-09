@@ -1,0 +1,16 @@
+{
+  "name": "test01",
+  "version": "1.0.0",
+  "description": "bla bla..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"aaa bbb\""
+  },
+  "keywords": [
+    "111",
+    "222"
+  ],
+  "author": "kblee",
+  "license": "ISC",
+  "dependencies": {}
+}
