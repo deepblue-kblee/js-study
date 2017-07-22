@@ -1,4 +1,4 @@
 class Person {
-    constructor(public name, public age) {
+    constructor(public name, private age, public region) {
     }
 }
