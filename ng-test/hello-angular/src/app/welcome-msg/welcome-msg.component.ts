@@ -13,16 +13,21 @@ export class WelcomeMsgComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const checkTouchedFn = () => {
       if (this.valid) return;
-      alert('이름을 입력해 주세요.');
+      //alert('이름을 입력해 주세요.');
+      console.log('이름을 입력해 주세요.');
     };
 
     setTimeout(checkTouchedFn, WelcomeMsgComponent.CHK_KEYUP_WAIT_MSEC);
   }
 
-  onKeyUp(name: string) {
-    var nm = name.trim();
-    console.log('[' + name + '][' + nm + ']');
-    this.valid = nm.length > 0;
+  // onKeyUp(name: string) {
+  //   var nm = name.trim();
+  //   console.log('[' + name + '][' + nm + ']');
+  //   this.valid = nm.length > 0;
+  // }
+
+  onChange() {
+    this.valid = this.userName.length > 0;
   }
   
   setName(name) {
