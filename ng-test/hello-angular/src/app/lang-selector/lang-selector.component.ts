@@ -23,7 +23,7 @@ export class LangSelectorComponent implements OnInit {
     this.i18nSupporter.langCode = code;
   }
 
-  isSelected(langCode) {
-    return this.langCode === langCode;
+  isSelected(code) {
+    return this.langCode === code;
   }
 }
