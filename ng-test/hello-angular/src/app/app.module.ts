@@ -9,6 +9,9 @@ import { LangSelectorComponent } from './lang-selector/lang-selector.component';
 import { I18nSupportService } from './i18n-support.service';
 import { LangSelectorBtnPipe } from './lang-selector/lang-selector-btn.pipe';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdToolbarModule, MdSnackBarModule, MdCardModule, MdInputModule, MdRadioModule, MdButtonModule } from '@angular/material'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,9 @@ import { LangSelectorBtnPipe } from './lang-selector/lang-selector-btn.pipe';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    MdToolbarModule, MdSnackBarModule, MdCardModule, MdInputModule, MdRadioModule, MdButtonModule
   ],
   providers: [{provide: COMPOSITION_BUFFER_MODE, useValue: false}, I18nSupportService],
   bootstrap: [AppComponent]
